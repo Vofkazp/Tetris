@@ -179,7 +179,11 @@ function draw() {
   drawPlayfield();
   drawTetromino();
   drawGhostTetromino();
-  console.log(tetris.score);
+  drawScore(tetris.score);
+}
+
+function drawScore(score) {
+  document.querySelector('#score').innerHTML = score;
 }
 
 function drawTetromino() {
